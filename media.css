@@ -99,7 +99,7 @@
   @media all and (max-width:479px) {
     header{
         display: block;
-        min-height: 85vh;
+        min-height: 90vh;
     }
     .txt_1{
         font-size: 19px;
@@ -123,7 +123,7 @@
 
     }
     #a1{
-        height: 50vh;
+        height: 60vh;
     }
     .txt_2 {
         text-align: center;
@@ -134,7 +134,7 @@
     }
 
     #a2{
-     height: 33vh;   
+     height: 40vh;   
     }
     .skill-box{
     display: none;
@@ -152,7 +152,7 @@
       
     }
     #a3{
-        height: 110vh;
+        height: 125vh;
     }
     #a4 {
         height: 65vh;
