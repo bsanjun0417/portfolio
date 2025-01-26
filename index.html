@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>포트폴리오</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo">Beaksan's portfolio</div>
+        <div id="menu">
+            <ul>
+                <li>About me</li>
+                <li>Skills</li>
+                <li>Career</li>
+                <li>project</li>
+            </ul>
+        </div>
+        <div id="title1">
+            <h2>WEB<br>PROGRAMER</h2>
+        </div>
+        <div id="img1"></div>
+        <div id="about_me">
+            <div id="about_title"><object type="image/svg+xml" data="about.svg" width="32" height="32"></object><div>about me</div></div>
+            <div id="content1">
+                <div class="post">
+                    <div>이름</div>
+                    <div class="txt_1">백산</div>
+                </div>
+                <div class="post">
+                    <div>생년월일</div>
+                    <div class="txt_1">2001.04.17</div>
+                </div>
+                <div class="post">
+                    <div>사는곳</div>
+                    <div class="txt_1">경기도 안양시</div>
+                </div>
+                <div class="post">
+                    <div>학력</div>
+                    <div class="txt_1">인하공업전문대학<br>정보통신학과</div>
+                </div>
+     
+            </div>
+
+        </div>
+
+    
+    </header>
+    <main>
+        <article id="a1">
+            <div id="content2">
+                <div class="txt_2">Archiving</div>
+                <div class="box1">
+                    <img src="github.png" alt="">
+                    <div class="txt_3">깃허브<br> 보러가기</div>
+                </div>
+                <div class="box1">
+                    <img src="tistory.svg" alt="">
+                    <div class="txt_3">개발블로그<br> 보러가기</div>
+                </div>
+            </div>
+        </article>
+        <article id="a2">
+            <div class="title_set">skills</div>
+
+            <div class="skill-box">
+                <div class="box2">
+                    <img src="logo-web.png" alt="" class="box2_img">
+                </div>
+                <div class="box2">
+                    <img src="logo-jquery.png" alt="" class="box2_img">
+                </div>
+                <div class="box2">
+                    <div class="box2_txt">Express</div>
+                </div>
+            </div>
+            <div class="skill-box">
+                <div class="box2">
+                    <img src="logo-python.png" alt="" class="box2_img">
+                </div>
+                <div class="box2">
+                    <img src="logo-firebase.png" alt="" class="box2_img">
+                </div>
+                <div class="box2">
+                    <img src="logo-flask.webp" alt="" class="box2_img">
+                </div>
+            </div>
+            <div class="box3">
+                <span>html</span>
+                <span>css</span>
+                <span>javascript</span>
+                <span>jquery</span>
+                <span>python</span>
+                <span>express</span>
+                <span>flask</span>
+                <span>firebase</span>
+            </div>
+        </article>
+        <article id="a3">
+            <div class="title_set">Career</div>
+            <div class="career-box">
+                <div class="career-item">
+                    <div class="career-title">회사명: 한국렌탈(주)</div>
+                    <div class="career-desc">2023.01 - 2023.04<br>컴퓨터 조립, 물류관리 등등</div>
+                </div>
+                <div class="career-item">
+                    <div class="career-title">회사명: (주)아이티온</div>
+                    <div class="career-desc">2023.07 - 2023.08<br>인터넷 쇼핑몰(송장붙이기,택배포장)</div>
+                </div>
+                <div class="career-item">
+                    <div class="career-title">회사명: 미림미디어랩주식회사</div>
+                    <div class="career-desc">2023.10 - 2023.12<br>html,css,js(제이쿼리) 사용하여 웹퍼블리싱</div>
+                </div>
+                <div class="career-item">
+                    <div class="career-title">회사명:(주)토브소프트</div>
+                    <div class="career-desc">2024.05 - 2024.07<br>html,css,js(제이쿼리) 사용하여 웹퍼블리싱</div>
+                </div>
+                <div class="career-item">
+                    <div class="career-title">회사명:상록에스</div>
+                    <div class="career-desc">2024.10 - 2024.12<br>자바스크립트 사용하여 양산</div>
+                </div>
+                
+            </div>
+        </article>
+        <article id="a4">
+                <div class="title_set">project</div>
+                <div class="career-box">
+                    <div class="career-item">
+                        <div class="career-title">프로젝트이름</div>
+                        <div class="career-desc">프로젝트 설명</div>
+                        <div class="career-desc p-color">깃허브</div>
+                        <div class="career-desc p-color">사이트 보러가기</div>
+                    </div>
+                    <div class="career-item">
+                        <div class="career-title">프로젝트이름</div>
+                        <div class="career-desc">프로젝트 설명</div>
+                        <div class="career-desc p-color">깃허브</div>
+                        <div class="career-desc p-color">사이트 보러가기</div>
+                    </div>
+                    
+                </div>
+
+      
+        </article>
+        
+    </main>
+    <script>
+
+
+
+ $(document).ready(function() {
+
+    let screenWidth = window.innerWidth;
+    moblie_ui(screenWidth);
+    $(window).resize(function() {
+        screenWidth = window.innerWidth;
+        moblie_ui(screenWidth);
+    });
+
+    function moblie_ui(){
+    if(screenWidth < 480){
+        console.log("aaa")
+        $(".box3").css("display","block")
+    }
+    else if(screenWidth > 479){
+        $(".box3").css("display","none")
+    }
+
+    }
+
+    });
+    </script>
+</body>
+</html>
+

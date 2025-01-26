@@ -1,0 +1,181 @@
+@media (max-width: 1600px) {
+    #img1{
+        scale: 0.8;
+        right: 10px;
+        top: 230px;
+    }
+}
+
+@media (max-width: 1345px) {
+    #img1{
+        display: none;
+    }
+}
+
+
+@media (max-width:1279px) { 
+    #a1{
+        height: 18vh;
+    }
+    #a2{
+        height: 43vh;
+    }
+    #a3{
+        height: 109vh;
+    }
+    #a4{
+        height: 55vh;
+    }
+    #content2{
+        gap: 50px;
+    }
+    .box1{
+        width: 300px;
+        height: 130px;
+    }
+    .box1 > img {
+        width: 80px;
+        height: 80px;
+        margin-top: 22px;
+        margin-left: 20px;
+    }
+    .txt_2{
+        font-size: 22px;
+    }
+    .txt_3{
+        margin: 30px;
+    }
+    #logo,#menu{
+        font-size: 1.2rem;
+    }
+    .box2_img{
+        width: 185px;
+        margin: 25px auto;
+    }
+  } 
+  
+  /* 태블릿 가로 (해상도 768px ~ 1023px)*/ 
+  @media all and (min-width:768px) and (max-width:900px) { 
+    #a3{
+        height: 95vh;
+    }
+    .box1{
+        width: 255px;
+    }
+    #content2{
+        gap: 40px;
+    }
+    .txt_3{
+        font-size: 22px;
+    }
+    .skill-box{
+        gap: 25px;
+    }
+  } 
+  
+  /* 모바일 가로 & 태블릿 세로 (해상도 480px ~ 767px)*/ 
+  @media all and (min-width:480px) and (max-width:767px) {
+    .skill-box{
+        gap: 25px;
+    }
+    .box2_img{
+        width: 150px;
+    }
+    #about_me{
+        width: 440px;
+        left: 30px;
+
+    }
+    #a1{
+        height: 50vh;
+    }
+    #content2{
+        flex-direction: column;
+        gap: 0;
+       }
+  } 
+  
+  /* 모바일 세로 (해상도 ~ 479px)*/ 
+  @media all and (max-width:479px) {
+    header{
+        display: block;
+        min-height: 85vh;
+    }
+    .txt_1{
+        font-size: 19px;
+    }
+    #menu{
+        margin-top: 24px;
+    }
+    #menu > ul{
+        gap: 30px;
+        font-size: 15px;
+    }
+    #title1{
+        top: 175px;
+        left: 46px;
+        font-size: 1.8rem;
+    }
+    #about_me{
+        width: 330px;
+        left: 30px;
+
+    }
+    #a1{
+        height: 50vh;
+    }
+    .txt_2 {
+        text-align: center;
+    }
+    #content2{
+     flex-direction: column;
+     gap: 0;
+    }
+
+    #a2{
+     height: 25vh;   
+    }
+    .skill-box{
+    display: none;
+    }
+    .box3{     
+        margin: 35px auto;
+        width: 80%;
+    }
+    .box3 >span{
+        background-color: white;
+        letter-spacing: 2px;
+        font-size: 15px;
+        padding: 2px 15px;
+        border-radius: 5px;
+      
+    }
+    #a3{
+        height: 118vh;
+    }
+    #a4 {
+        height: 55vh;
+    }
+  }
+
+  @media all and (max-width:380px) {
+    header{
+        min-height: 114vh;
+    }
+    #about_me{
+        width: 310px;
+        left: 18px;
+    }
+    #a1{
+        height: 66vh;
+    }
+    #a2{
+        height: 40vh;
+    }
+    #a3{
+        height: 150vh;
+    }
+    #a4{
+        height: 75vh;
+    }
+  }
