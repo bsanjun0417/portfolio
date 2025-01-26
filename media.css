@@ -119,6 +119,7 @@
     #about_me{
         width: 330px;
         left: 30px;
+        top: 330px;
 
     }
     #a1{
@@ -133,7 +134,7 @@
     }
 
     #a2{
-     height: 25vh;   
+     height: 33vh;   
     }
     .skill-box{
     display: none;
@@ -151,29 +152,32 @@
       
     }
     #a3{
-        height: 118vh;
+        height: 110vh;
     }
     #a4 {
-        height: 55vh;
+        height: 65vh;
+    }
+    .career-item{
+        padding: 11px;
     }
   }
 
   @media all and (max-width:380px) {
     header{
-        min-height: 114vh;
+        min-height: 120vh;
     }
     #about_me{
         width: 310px;
         left: 18px;
     }
     #a1{
-        height: 66vh;
+        height: 80vh;
     }
     #a2{
-        height: 40vh;
+        height: 50vh;
     }
     #a3{
-        height: 150vh;
+        height: 160vh;
     }
     #a4{
         height: 75vh;
