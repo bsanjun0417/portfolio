@@ -1,8 +1,6 @@
 @media (max-width: 1600px) {
     #img1{
         scale: 0.8;
-        right: 10px;
-        top: 230px;
     }
 }
 
@@ -14,18 +12,7 @@
 
 
 @media (max-width:1279px) { 
-    #a1{
-        height: 18vh;
-    }
-    #a2{
-        height: 43vh;
-    }
-    #a3{
-        height: 109vh;
-    }
-    #a4{
-        height: 55vh;
-    }
+
     #content2{
         gap: 50px;
     }
@@ -39,9 +26,7 @@
         margin-top: 22px;
         margin-left: 20px;
     }
-    .txt_2{
-        font-size: 22px;
-    }
+
     .txt_3{
         margin: 30px;
     }
@@ -56,9 +41,6 @@
   
   /* 태블릿 가로 (해상도 768px ~ 1023px)*/ 
   @media all and (min-width:768px) and (max-width:900px) { 
-    #a3{
-        height: 95vh;
-    }
     .box1{
         width: 255px;
     }
@@ -83,12 +65,8 @@
     }
     #about_me{
         width: 440px;
-        left: 30px;
+    }
 
-    }
-    #a1{
-        height: 50vh;
-    }
     #content2{
         flex-direction: column;
         gap: 0;
@@ -98,18 +76,19 @@
   /* 모바일 세로 (해상도 ~ 479px)*/ 
   @media all and (max-width:479px) {
     header{
-        display: block;
-        min-height: 90vh;
+        gap: 55px;
+    }
+    .set_header{
+        flex-direction: column;
+        gap: 20px;
     }
     .txt_1{
-        font-size: 19px;
-    }
-    #menu{
-        margin-top: 24px;
+        font-size: 16px;
     }
     #menu > ul{
-        gap: 30px;
-        font-size: 15px;
+        gap: 16px;
+        font-size: 14px;
+
     }
     #title1{
         top: 175px;
@@ -118,24 +97,18 @@
     }
     #about_me{
         width: 330px;
-        left: 30px;
-        top: 330px;
-
-    }
-    #a1{
-        height: 60vh;
     }
     .txt_2 {
         text-align: center;
+    }
+    .post{
+        font-size: 25px;
     }
     #content2{
      flex-direction: column;
      gap: 0;
     }
 
-    #a2{
-     height: 40vh;   
-    }
     .skill-box{
     display: none;
     }
@@ -151,35 +124,22 @@
         border-radius: 5px;
       
     }
-    #a3{
-        height: 125vh;
-    }
-    #a4 {
-        height: 65vh;
-    }
     .career-item{
         padding: 11px;
     }
   }
 
   @media all and (max-width:380px) {
-    header{
-        min-height: 120vh;
-    }
     #about_me{
-        width: 310px;
-        left: 18px;
+        width: 300px;
     }
-    #a1{
-        height: 80vh;
+    .txt_1 {
+        font-size: 14px;
     }
-    #a2{
-        height: 50vh;
-    }
-    #a3{
-        height: 160vh;
-    }
-    #a4{
-        height: 75vh;
+    #menu > ul {
+        gap: 14px;
+        font-size: 12px;
     }
   }
+
+  

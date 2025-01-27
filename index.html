@@ -9,23 +9,35 @@
     <title>포트폴리오</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="main.js"></script>
+    <style>
+        .set_header{
+            display: flex;
+            justify-content: space-between;
+        }
+  
+    </style>
 </head>
 <body>
     <header>
-        <div id="logo">Beaksan's portfolio</div>
-        <div id="menu">
-            <ul>
-                <li id="l1">About me</li>
-                <li id="l2">Archiving</li>
-                <li id="l3">Skills</li>
-                <li id="l4">Career</li>
-                <li id="l5">project</li>
-            </ul>
+        <div class="set_header">
+            <div id="logo">Beaksan's portfolio</div>
+            <div id="menu">
+                <ul>
+                    <li id="l1">About me</li>
+                    <li id="l2">Archiving</li>
+                    <li id="l3">Skills</li>
+                    <li id="l4">Career</li>
+                    <li id="l5">project</li>
+                </ul>
+            </div>
         </div>
+  
+
+  <div class="set_header">
+    <div id="left_ui">
         <div id="title1">
             <h2>WEB<br>PROGRAMER</h2>
         </div>
-        <div id="img1"></div>
         <div id="about_me">
             <div id="about_title"><object type="image/svg+xml" data="./img/about.svg" width="32" height="32"></object><div>about me</div></div>
             <div id="content1">
@@ -47,9 +59,11 @@
                 </div>
      
             </div>
-
         </div>
 
+    </div>
+      <div id="img1"></div>
+  </div>      
     
     </header>
     <main>
@@ -102,7 +116,7 @@
                 <span>firebase</span>
             </div>
         </article>
-        <article id="a3">
+        <article id="a3" class="a34_set">
             <div class="title_set">Career</div>
             <div class="career-box">
                 <div class="career-item">
@@ -121,14 +135,14 @@
                     <div class="career-title">회사명:(주)토브소프트</div>
                     <div class="career-desc">2024.05 - 2024.07<br>html,css,js(제이쿼리) 사용하여 웹퍼블리싱</div>
                 </div>
-                <div class="career-item">
+                <div class="career-item m_bottom">
                     <div class="career-title">회사명:상록에스</div>
                     <div class="career-desc">2024.10 - 2024.12<br>자바스크립트 사용하여 양산</div>
                 </div>
                 
             </div>
         </article>
-        <article id="a4">
+        <article id="a4" class="a34_set">
                 <div class="title_set">project</div>
                 <div class="career-box">
                     <div class="career-item">
@@ -137,7 +151,7 @@
                         <div class="career-desc p-color">깃허브</div>
                         <div class="career-desc p-color">사이트 보러가기</div>
                     </div>
-                    <div class="career-item">
+                    <div class="career-item m_bottom">
                         <div class="career-title">프로젝트이름</div>
                         <div class="career-desc">프로젝트 설명</div>
                         <div class="career-desc p-color">깃허브</div>

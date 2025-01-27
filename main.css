@@ -11,8 +11,6 @@ html,
 body {
     width: 100%;
     font-family: "Black Han Sans", serif;
-
-
 }
 a{
     color: black;
@@ -20,16 +18,16 @@ a{
 }
 header {
     background-color: #123A98;
-    min-height: 80vh;
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 120px;
     padding: 20px 40px;
+
 
 }
 
 main {
-    height: 120vh;
     width: 100%;
 }
 
@@ -50,9 +48,6 @@ li {
 }
 
 #title1 {
-    position: absolute;
-    top: 160px;
-    left: 100px;
     font-size: 2.2rem;
     color: white;
 }
@@ -63,9 +58,6 @@ li {
 }
 
 #img1 {
-    position: absolute;
-    right: 145px;
-    top: 189px;
     width: 690px;
     height: 540px;
     background-image: url(./img/main.png);
@@ -74,9 +66,6 @@ li {
 }
 
 #about_me {
-    position: absolute;
-    top: 400px;
-    left: 100px;
     border-top-right-radius: 100px;
     border-bottom-right-radius: 100px;
     width: 600px;
@@ -109,19 +98,18 @@ li {
 
 #a1 {
     background-color: #f5f5f5;
-    height: 20vh;
     display: flex;
     gap: 20px;
     justify-content: center;
 }
 
 .box1 {
-    width: 400px;
+    width: 340px;
     height: 150px;
     background-color: white;
     border-radius: 25px;
     display: flex;
-    margin-top: 25px;
+    margin: 30px;
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.15), 0 10px 10px rgba(0, 0, 0, 0.12);
 }
 
@@ -133,7 +121,7 @@ li {
 
 #content2 {
     display: flex;
-    gap: 100px;
+    gap: 70px;
 }
 
 .txt_1 {
@@ -144,7 +132,8 @@ li {
 
 .txt_2 {
     font-size: 30px;
-    margin-top: 70px;
+    margin-top: 90px;
+    text-align: center;
 }
 
 .txt_3 {
@@ -154,7 +143,8 @@ li {
 
 #a2 {
     background-color: #f9c51d;
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .title_set {
@@ -168,7 +158,7 @@ li {
 .skill-box {
     display: flex;
     gap: 40px;
-    margin-top: 60px;
+    margin: 27px;
     justify-content: center;
 }
 
@@ -195,9 +185,13 @@ li {
     display: none;
 }
 
+.a34_set{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
 #a3 {
     background-color: #f0f8ff;
-    height: 100vh;
 }
 
 .career-box {
@@ -205,7 +199,7 @@ li {
     flex-direction: column;
     gap: 35px;
     width: 80%;
-    margin: 70px auto;
+    margin: 0 auto;
 }
 
 .career-item {
@@ -227,9 +221,13 @@ li {
     color: #555;
 }
 
+.m_bottom{
+    margin-bottom: 100px;
+}
+
 #a4 {
   background-color: #f6f6f6;
-  height: 55vh;
+
 }
 
 .p-color{
