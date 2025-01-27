@@ -8,16 +8,18 @@
     <link rel="stylesheet" href="media.css">
     <title>포트폴리오</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script>
 </head>
 <body>
     <header>
         <div id="logo">Beaksan's portfolio</div>
         <div id="menu">
             <ul>
-                <li>About me</li>
-                <li>Skills</li>
-                <li>Career</li>
-                <li>project</li>
+                <li id="l1">About me</li>
+                <li id="l2">Archiving</li>
+                <li id="l3">Skills</li>
+                <li id="l4">Career</li>
+                <li id="l5">project</li>
             </ul>
         </div>
         <div id="title1">
@@ -170,6 +172,35 @@
         $(".box3").css("display","none")
     }
 
+    }
+
+    $("#menu > ul > li").click(function() {
+
+    let li_id = $(this).attr("id")
+    if(li_id=="l1"){
+        loc("header")
+    }
+    else if(li_id == "l2"){
+        loc("#a1")
+    }
+    else if(li_id=="l3"){
+        loc("#a2")
+    }
+    else if(li_id=="l4"){
+        loc("#a3")
+    }
+    else{
+        loc("#a4")
+    }
+
+    });
+
+    function loc(id){
+    ///이프가 l1이면 header그리고 내려서 넣어버리기
+    console.log($(id).offset())
+    $('html, body').animate({
+                scrollTop: $(id).offset().top
+        }, 1000); 
     }
 
     });
