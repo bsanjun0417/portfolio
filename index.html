@@ -146,16 +146,13 @@
                 <div class="title_set">project</div>
                 <div class="career-box">
                     <div class="career-item">
-                        <div class="career-title">프로젝트이름</div>
-                        <div class="career-desc">프로젝트 설명</div>
-                        <div class="career-desc p-color">깃허브</div>
-                        <div class="career-desc p-color">사이트 보러가기</div>
+                        <div class="career-title">url 단축, qr코드 생성 해주는 사이트</div>
+                        <div class="career-desc">flask와 네이버 클라우드 플랫폼 api를 사용하여 만듬</div>
+                        <div class="career-desc"><a href="https://github.com/bsanjun0417/edit_url">깃허브</a></div>
+                        <div class="career-desc"><a class="p-color" href="https://port-0-editurl-12fhqa2blngdrlut.sel5.cloudtype.app/">사이트 보러가기</a></div>
                     </div>
                     <div class="career-item m_bottom">
-                        <div class="career-title">프로젝트이름</div>
-                        <div class="career-desc">프로젝트 설명</div>
-                        <div class="career-desc p-color">깃허브</div>
-                        <div class="career-desc p-color">사이트 보러가기</div>
+                        <div class="career-title">진행중...</div>
                     </div>
                     
                 </div>
@@ -164,61 +161,7 @@
         </article>
         
     </main>
-    <script>
 
-
-
- $(document).ready(function() {
-
-    let screenWidth = window.innerWidth;
-    moblie_ui(screenWidth);
-    $(window).resize(function() {
-        screenWidth = window.innerWidth;
-        moblie_ui(screenWidth);
-    });
-
-    function moblie_ui(){
-    if(screenWidth < 480){
-        console.log("aaa")
-        $(".box3").css("display","block")
-    }
-    else if(screenWidth > 479){
-        $(".box3").css("display","none")
-    }
-
-    }
-
-    $("#menu > ul > li").click(function() {
-
-    let li_id = $(this).attr("id")
-    if(li_id=="l1"){
-        loc("header")
-    }
-    else if(li_id == "l2"){
-        loc("#a1")
-    }
-    else if(li_id=="l3"){
-        loc("#a2")
-    }
-    else if(li_id=="l4"){
-        loc("#a3")
-    }
-    else{
-        loc("#a4")
-    }
-
-    });
-
-    function loc(id){
-    ///이프가 l1이면 header그리고 내려서 넣어버리기
-    console.log($(id).offset())
-    $('html, body').animate({
-                scrollTop: $(id).offset().top
-        }, 1000); 
-    }
-
-    });
-    </script>
 </body>
 </html>
 
